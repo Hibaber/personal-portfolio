@@ -71,7 +71,7 @@ export const Banner = () => {
                   <p className="aboutme"> After working for over 7 years in translation and office management fields, I discovered my new passion for the amazing world of Tech and programming languages and decided to embark on a Full-stack MERN Web Development Bootcamp journey. <br /> <br />  I am looking forward to landing my first job as a Frontend Developer and continue learning and growing as a professional.<br /> <br /> In my free time I love hanging out with my friends, travelling, cooking & exploring new restaurants, reading and cicling.
 
                   </p>
-                  <button className="tagline" onClick={() => { downloadFileAtUrl(cvUrl) }}>Download CV</button>
+                  {/* <button className="tagline" onClick={() => { downloadFileAtUrl(cvUrl) }}>Download CV</button> */}
 
                 </div>}
             </TrackVisibility>
