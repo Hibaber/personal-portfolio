@@ -11,20 +11,20 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [" Junior Frontend Developer"];
+  const toRotate = [" Front-end Web Developer"];
   const period = 2000;
 
-  const cvUrl = 'http://personal-portfolio-three-mu.vercel.app/cv.pdf'
+  // const cvUrl = 'http://personal-portfolio-three-mu.vercel.app//cv.pdf'
 
-  const downloadFileAtUrl = (url) => {
-    const fileName = url.split('/').pop()
-    const aTag = document.createElement('a')
-    aTag.href = url;
-    aTag.setAttribute('download', fileName)
-    document.body.appendChild(aTag)
-    aTag.click()
-    aTag.remove()
-  }
+  // const downloadFileAtUrl = (url) => {
+  //   const fileName = url.split('/').pop()
+  //   const aTag = document.createElement('a')
+  //   aTag.href = url;
+  //   aTag.setAttribute('download', fileName)
+  //   document.body.appendChild(aTag)
+  //   aTag.click()
+  //   aTag.remove()
+  // }
 
   useEffect(() => {
     let ticker = setInterval(() => {
