@@ -14,7 +14,7 @@ export const Banner = () => {
   const toRotate = [" Junior Frontend Developer"];
   const period = 2000;
 
-  const cvUrl = 'http://localhost:3000/cv.pdf'
+  const cvUrl = 'http://personal-portfolio-three-mu.vercel.app/cv.pdf'
 
   const downloadFileAtUrl = (url) => {
     const fileName = url.split('/').pop()
