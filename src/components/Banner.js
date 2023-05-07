@@ -11,20 +11,9 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [" Front-end Web Developer"];
+  const toRotate = [" Frontend Developer"];
   const period = 2000;
 
-  // const cvUrl = 'http://personal-portfolio-three-mu.vercel.app//cv.pdf'
-
-  // const downloadFileAtUrl = (url) => {
-  //   const fileName = url.split('/').pop()
-  //   const aTag = document.createElement('a')
-  //   aTag.href = url;
-  //   aTag.setAttribute('download', fileName)
-  //   document.body.appendChild(aTag)
-  //   aTag.click()
-  //   aTag.remove()
-  // }
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -66,25 +55,18 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <h1 className="intro-title">{`Hi! I'm Hiba, a`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Frontend Developer" ]'><span className="wrap">{text}</span></span></h1>
+                <div>
+                  < div className="box-wrap">
+                    <h1 className="intro-title">{`Hi! I'm Hiba, a`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Frontend Developer" ]'><span className="wrap">{text}</span></span></h1>
+                  </div>
                   <p className="aboutme"> After working for over 7 years in translation and office management fields, I discovered my new passion for the amazing world of Tech and programming languages and decided to embark on a Full-stack MERN Web Development Bootcamp journey. <br /> <br />  I am looking forward to landing my first job as a Frontend Developer and continue learning and growing as a professional.<br /> <br /> In my free time I love hanging out with my friends, travelling, cooking & exploring new restaurants, reading and cicling.
-
                   </p>
-                  {/* <button className="tagline" onClick={() => { downloadFileAtUrl(cvUrl) }}>Download CV</button> */}
 
                 </div>}
             </TrackVisibility>
           </Col>
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <div className="pic-box">
-                    <img src={headerImg} alt="Header Img" className="pic" />
-                  </div>
-                </div>}
-            </TrackVisibility>
+          <Col xs={12} md={6} xl={5} className="pic-box">
+            <img src={headerImg} alt="Header Img" className="pic" />
           </Col>
         </Row>
       </Container>
